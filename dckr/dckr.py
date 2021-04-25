@@ -4,7 +4,7 @@ import containers
 import images
 
 def main():
-    myClient = docker.DockerClient(base_url='unix://var/run/docker.sock')
+    myClient = docker.from_env()
 
     if sys.argv[1].lower() == 'container' or sys.argv[1].lower() == 'c':
         containers.HandleContainer(myClient)
