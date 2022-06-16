@@ -23,6 +23,15 @@ def HandleVolumes(client):
         printVolumes(volumes)
         return
 
+    if sys.argv[2].lower() == 'clean':
+        choice = input(f'Total {colorize.colorizeNumber(len(volumes))} volume(s) will be removed. Proceed (y/n)? ')
+        if choice.lower() == 'y' or choice.lower() == 'yes':
+            for v in volumes:
+                v.remove(force=True)
+            print(f'All volume(s) removed')
+        else:
+            print(f'Volume remove aborted')
+
 def printVolumes(volumes):
     t = PrettyTable(['Name','Driver'])
     for v in volumes:
