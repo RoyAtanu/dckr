@@ -26,12 +26,17 @@ You should have following packages installed -
 * pyinstaller
 ### Instructions
 1. Go to the root folder of repo
-2. Run the following command to run the dependencies 
+2. [Optional] Setup virtual env for python if not done already
 
-``` pip3 install -r requirements.txt ```
-3. Run the following command to build the executable
+    ``` python3 -m venv .venv ```
 
-``` pyinstaller --onefile --console dckr/dckr.py ```
+3. Run the following command to install the dependencies 
+
+    ``` pip3 install -r requirements.txt ```
+
+4. Run the following command to build the executable
+
+    ``` pyinstaller --onefile --console dckr/dckr.py ```
 ***
 
 
