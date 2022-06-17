@@ -14,8 +14,17 @@ A Docker CLI alternative with shortcuts and added functionalities
     ![List functionality](documentation/images/screenshot_list.png?raw=true)
 * ### **Cleanup** arguments
     *dckr* provides shortcuts to bulk cleanup of docker artifacts by running single command
+    
+    `./dckr container clean` will delete all containers at one go
 * ### **Colored** console output
     *dckr* prints colored texts in console for highlighting key information (e.g. # of items, status etc.)
+
+****
+## How to use this utility
+
+Instructions to use the CLI to can be found by running `./dckr help`
+
+Refer `dckr/help.py` for details
 
 ****
 ## How to build the executable from source
