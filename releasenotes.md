@@ -1,7 +1,7 @@
 Functions currently available with this build
-- Docker artifacts -> container and image
-- search and list
+- Docker artifacts -> container, image, volume
+- search, list, clean
 
 Changes in this Release
-- Workflow updated for automatic release creation and artifact upload
-- README.md updated
+- support for volume added
+- CLI help added
