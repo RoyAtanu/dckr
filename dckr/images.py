@@ -26,8 +26,8 @@ def HandleImage(client):
     if sys.argv[2].lower() == 'clean':
         choice = input(f'Total {colorize.colorizeNumber(len(images))} will be removed. Proceed (y/n)? ')
         if choice.lower() == 'y' or choice.lower() == 'yes':
-            # for i in images:
-            #     client.images.remove(i.attrs['Id'][7:19])
+            for i in images:
+                client.images.remove(i.attrs['Id'][7:19], force=True)
             print(f'All images removed')
         else:
             print(f'Image remove aborted')
